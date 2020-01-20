@@ -55,3 +55,10 @@ button {
     width: 200px;
     height: 50px;
 }
+
+#dot-border {
+    border-width: 2px;
+    border-style: dotted;
+    border-color: green;
+    padding: 20px;
+}
