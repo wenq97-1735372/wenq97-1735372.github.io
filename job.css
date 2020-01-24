@@ -1,0 +1,45 @@
+body {
+    background-image: url('teach.jpg');
+    background-size: contain;
+    font-family: 'Roboto Slab', serif;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+fieldset {
+    background-color: white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    border-radius: 10px;
+    border: black solid 2px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+textarea.form-control {
+    width: 80%;
+    height: 300px;
+    resize: none;
+}
+
+#checkbox-group input {
+    margin-left: 20px;
+}
+
+.btn {
+    height: 50px;
+    width: 200px;
+    padding: 10px;
+}
+
+#button-container {
+    display: flex;
+    justify-content: center;
+}

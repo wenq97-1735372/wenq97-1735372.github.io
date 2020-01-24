@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Job Application</title>
+		<link href="job.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+	</head>
+<body>
+	<div class="container">
+
+	<h2>Job Application for CSE 163 Teaching Assistant</h2>
+
+	<p>&nbsp;</p>
+
+	<form name="input" action="html_form_action.asp" method="post">
+	<fieldset class="form-horizontal">
+		<h3>Personal Information</h3>
+		<div class="form-group">
+			<label>First name</label>
+			<div>
+				<input class="form-control" type="text" name="first-name">
+			</div>
+		</div>
+		<div class="form-group">
+			<label>Last name</label>
+			<div>
+				<input class="form-control" type="text" name="last-name">
+			</div>
+		</div>
+		<div class="form-group">
+			<label>Student ID</label>
+			<div>
+				<input class="form-control" type="text" name="id">
+			</div>
+		</div>
+		<div class="form-group">
+			<label>UW NetID</label>
+			<div>
+				<input class="form-control" type="text" name="netid">
+			</div>
+		</div>
+		<div class="form-group">
+			<label>Password (just kidding, we don't need this from you)</label>
+			<div>
+				<input type="password" name="pwd">
+			</div>
+		</div>
+		<div class="form-group">
+			<label>Have you taken CSE 163 before?</label>
+			<div>
+				<div class="radio">
+					<label>
+						<input type="radio" name="legal" value="yes">Yes
+					</label>
+				</div>
+				<div class="radio">
+					<label>
+						<input type="radio" name="legal" value="no">No
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="form-group">
+			<label>If so, which quarter did you take the class?</label>
+			<div>
+				<select class="form-control" name="quarter">
+					<option value="" selected="true">Choose a Quarter</option>
+					<option value="sp2019">Spring 2019</option>
+					<option value="wi2020">Winter 2020</option>
+					<option value="none">I haven't taken the class before</option>
+				</select>
+			</div>
+		</div>
+		<div class="form-group">
+			<label>Which of the following quarters are you planning to TA?</label>
+			<div id="checkbox-group">
+				<input type="checkbox" name="checkbox-sp2020" value="sp-2020">Spring 2020
+				<input type="checkbox" name="checkbox-au2020" value="au-2020">Autumn 2020
+				<input type="checkbox" name="checkbox-wi2021" value="wi-2021">Winter 2021
+				<input type="checkbox" name="checkbox-sp2021" value="sp-2021">Spring 2021				
+			</div>
+		</div>
+	</fieldset>
+
+	<p>&nbsp;</p>
+
+	<fieldset>
+		<h3>Personal Statement</h3>
+		<div class="form-group">
+			<label class="control-label">Why do you want to teach CSE 163?</label>
+			<br />
+			<textarea class="form-control" name="reason"></textarea>
+		</div>
+		<div class="form-group">
+			<label class="control-label">If you have taken the class before, 
+				what feedback would you give to improve the class?</label>
+			<br />
+			<textarea class="form-control" name="feedback"></textarea>
+		</div>
+	</fieldset>
+
+	<p>&nbsp;</p>
+
+	<div id="button-container">
+		<input class="btn" type="submit" value="Apply">
+	</div>
+	<p>&nbsp;</p>
+
+</form>
+</div>
+
+</body></html>
